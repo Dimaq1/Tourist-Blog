@@ -1,0 +1,32 @@
+.content-home {
+
+
+
+  &__text {
+    color: #fbd784;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 800;
+    line-height: 22px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 10%;
+      height: 2px;
+      background-color: #fbd784;
+    }
+  }
+
+  &__title {
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-transform: capitalize;
+  }
+}
