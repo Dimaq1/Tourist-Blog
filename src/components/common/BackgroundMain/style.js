@@ -7,7 +7,7 @@ const style = {
     zIndex: '-1',
   },
   bgHome: {
-    backgroundImage: "url('../../public/images/bg-home.jpg')",
+    backgroundImage: "url('./images/bg-home.jpg')",
     width: '100%',
     height: '100%',
     backgroundPosition: 'center center',
