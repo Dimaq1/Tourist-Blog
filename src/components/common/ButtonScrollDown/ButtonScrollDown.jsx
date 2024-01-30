@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import Button from '@mui/material/Button';
 import SouthIcon from '@mui/icons-material/South';
-import styles from './style.js'
+import style from './style.js'
 import { scrollDown } from '../../../store/buttonScrollDown/reducer.js';
 
 function ButtonScrollDown() {
@@ -14,7 +14,7 @@ function ButtonScrollDown() {
 
 
   return (
-    <Button sx={styles} onClick={() => hangleScrollDownClick()} variant="text">
+    <Button sx={style} onClick={() => hangleScrollDownClick()} variant="text">
       scroll down
       <SouthIcon />
     </Button>

@@ -2,41 +2,26 @@ import { createTheme } from '@mui/material/styles';
 import 'normalize.css';
 
 const theme = createTheme({
-  components: {
-    MuiTypography: {
-      styleOverrides: {
-        root: {
-          fontFamily: "Chilanka, sans-serif"
-        },
-        h1: {
-          fontSize: "5.5rem",
-        },
-        p: {
-          fontSize: "1.4rem"
-        }
-      }
-    },
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          fontSize: "18px"
-        }
-      }
-    },
-  },
   palette: {
     primary: {
+      dark: '#D3D8D7',
       main: '#fff',
     },
     secondary: {
-      main: 'rgba(255, 255, 255, 1)',
+      main: 'rgba(251, 215, 132, 1)',
     },
   },
   typography: {
+    fontFamily: 'Gilroy-Bold, sans-serif',
+    fontSize: 18,
     h1: {
-      fontSize: '88px'
-    }
-  }
+      fontSize: '88px',
+      fontFamily: 'Chronicle Display, sans-serif',
+    },
+    body1: {
+      fontSize: '18px',
+    },
+  },
 });
 
 

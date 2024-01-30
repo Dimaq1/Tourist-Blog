@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import { Typography } from '@mui/material';
 import pathes from '../../../constants/pathes';
-import style from './style.js'
+import './style.scss'
 
 function Account() {
 
   return (
-    <Link to={pathes.account} style={style.account}>
+    <Link to={pathes.account} className='account'>
       <AccountCircleOutlinedIcon />
-      <Typography style={style.accountText} className='account__text'>
+      <Typography>
         Account
       </Typography>
     </Link>
