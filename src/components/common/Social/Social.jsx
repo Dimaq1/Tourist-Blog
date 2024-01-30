@@ -1,16 +1,19 @@
 import React from 'react';
-import { Box, Link } from '@mui/material';
-import './style.scss'
+import { Box, Link, Typography } from '@mui/material';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import style from './style.js'
+import { URL_INSTAGRAM, URL_TWITTER } from '../../../constants/social.js';
 
 function Social() {
   return (
-    <Box sx={{ position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: '20px' }}>
-      <p style={{ writingMode: 'vertical-rl' }}>Follow us</p>
-      <Link className={'link-social'} href={'https://www.instagram.com/'} >
-        <img style={{ display: 'block' }} src="../../public/images/instagram.svg" alt="" />
+    <Box sx={style.socialContainer}>
+      <Typography sx={style.socialText}>Follow us</Typography>
+      <Link target="_blank" rel="noopener noreferrer" sx={style.socialLink} href={URL_INSTAGRAM} >
+        <InstagramIcon sx={style.socialLinkIcon} />
       </Link>
-      <Link className={'link-social'} href={'https://twitter.com/'}>
-        <img style={{ display: 'block' }} src="../../public/images/twitter.svg" alt="" />
+      <Link target="_blank" rel="noopener noreferrer" sx={style.socialLink} href={URL_TWITTER}>
+        <TwitterIcon sx={style.socialLinkIcon} />
       </Link>
     </Box>
   );

@@ -1,13 +1,14 @@
 import React from 'react';
-import './style.scss'
+import { Box } from '@mui/material';
+import style from './style.js'
 
-function BacgroundMain() {
+function BackgroundMain() {
   return (
-    <div className='bg-wrapp'>
-      <img className='bg-wrapp__img' src="../../public/images/bg-home.jpg" alt="" />
-      <img className='bg-wrapp__hero' src="../../public/images/bg-hero.png" alt="" />
-    </div>
+    <Box sx={style.bgWrapp}>
+      <Box sx={style.bgFogging} />
+      <Box sx={style.bgHome} />
+    </Box>
   );
 }
 
-export default BacgroundMain;
+export default BackgroundMain;
