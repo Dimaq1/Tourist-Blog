@@ -1,15 +1,16 @@
 import React from 'react';
 import './style.scss'
-import { Button } from '@mui/material';
+import { Box, Button } from '@mui/material';
+import style from './style';
 
 function Slider() {
   return (
-    <div className='slider'>
-      <Button className='slider__button'>Start</Button>
-      <Button className='slider__button'>01</Button>
-      <Button className='slider__button'>02</Button>
-      <Button className='slider__button'>03</Button>
-    </div>
+    <Box sx={style.slider}>
+      <Button sx={style.sliderButton}>Start</Button>
+      <Button sx={style.sliderButton}>01</Button>
+      <Button sx={style.sliderButton}>02</Button>
+      <Button sx={style.sliderButton}>03</Button>
+    </Box>
   );
 }
 
