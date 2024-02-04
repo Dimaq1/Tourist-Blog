@@ -5,10 +5,10 @@ import { Typography } from '@mui/material';
 import pathes from '../../../constants/pathes';
 import './style.scss'
 
-function Account() {
+function Account({ onClick }) {
 
   return (
-    <Link to={pathes.account} className='account'>
+    <Link to={pathes.account} onClick={onClick} className='account'>
       <AccountCircleOutlinedIcon />
       <Typography>
         Account

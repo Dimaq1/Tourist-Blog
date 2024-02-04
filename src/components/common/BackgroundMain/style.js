@@ -10,7 +10,7 @@ const style = {
     backgroundImage: "url('./images/bg-home.jpg')",
     width: '100%',
     height: '100%',
-    backgroundPosition: 'center center',
+    backgroundPosition: 'top left',
     backgroundSize: 'cover',
   },
   bgFogging: {

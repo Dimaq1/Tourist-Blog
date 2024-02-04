@@ -15,7 +15,6 @@ const theme = createTheme({
     fontFamily: 'Gilroy-Bold, sans-serif',
     fontSize: 18,
     h1: {
-      fontSize: '88px',
       fontFamily: 'Chronicle Display, sans-serif',
     },
     body1: {
@@ -23,6 +22,14 @@ const theme = createTheme({
     },
   },
 });
+
+theme.typography.h1 = {
+  fontFamily: 'Chronicle Display, sans-serif',
+  fontSize: '80px',
+  [theme.breakpoints.down('md')]: {
+    fontSize: '30px',
+  },
+}
 
 
 
