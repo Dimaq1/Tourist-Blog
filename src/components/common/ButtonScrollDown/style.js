@@ -1,11 +1,8 @@
 const style = {
   textTransform: 'lowercase',
-  lineHeight: '22px',
-  letterSpacing: '0px',
+  letterSpacing: 0,
   justifyContent: 'space-between',
-  maxWidth: '145px',
-  lineHeight: '22px',
-  color: 'primary',
+  maxWidth: 145,
 }
 
 export default style

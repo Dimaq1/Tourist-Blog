@@ -5,6 +5,8 @@ const style = {
     display: 'flex',
     flexDirection: 'column',
     borderRight: `2px solid ${theme.palette.primary.dark}`,
+    gridRow: { xs: '2 / 3' },
+    order: { xs: 2, md: 0 }
   },
   sliderButton: {
     textTransform: 'none',

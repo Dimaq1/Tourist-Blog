@@ -1,18 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import pathes from '../../../constants/pathes';
-import './style.scss'
+import style from './style.js'
 
-function Account({ onClick }) {
+function Account() {
 
   return (
-    <Link to={pathes.account} onClick={onClick} className='account'>
-      <AccountCircleOutlinedIcon />
-      <Typography>
-        Account
-      </Typography>
+    <Link to={pathes.account}>
+      <Box sx={style.account}>
+        <AccountCircleOutlinedIcon />
+        <Typography>
+          Account
+        </Typography>
+      </Box>
     </Link>
   );
 }

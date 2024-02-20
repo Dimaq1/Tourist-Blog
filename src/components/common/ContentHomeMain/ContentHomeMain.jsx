@@ -7,6 +7,7 @@ import style from './style.js'
 import Line from '../Line/Line.jsx';
 
 function ContentHomeMain() {
+
   return (
     <Container sx={style.contentHome} maxWidth="xl">
       <Social />
@@ -15,7 +16,7 @@ function ContentHomeMain() {
           <Line />
           A Hiking guide
         </Typography>
-        <Typography variant="h1" component="h1">
+        <Typography sx={style.contentHomeTitle} variant="h1" component="h1">
           Be prepared for the Mountains and beyond!
         </Typography>
         <ButtonScrollDown />

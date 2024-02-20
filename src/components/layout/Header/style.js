@@ -1,8 +1,8 @@
 const style = {
   header: {
     background: 'transparent',
-    paddingTop: '3rem',
-    boxShadow: '0',
+    pt: '3rem',
+    boxShadow: 0,
     position: 'static'
   },
   headerContainer: {

@@ -8,18 +8,22 @@ import RouteAccount from '../../routes/RouteAccount';
 import Header from '../layout/Header/Header';
 import Footer from '../layout/Footer/Footer';
 import pathes from '../../constants/pathes';
+import BackgroundMain from '../common/BackgroundMain/BackgroundMain';
 
 function Layout() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route index path={pathes.home} element={<RouteHome />} />
-        <Route path={pathes.equipment} element={<RouteEquipment />} />
-        <Route path={pathes.blog} element={<RouteBlog />} />
-        <Route path={pathes.about} element={<RouteAbout />} />
-        <Route path={pathes.account} element={<RouteAccount />} />
-      </Routes>
+      <BackgroundMain />
+      <main>
+        <Routes>
+          <Route index path={pathes.home} element={<RouteHome />} />
+          <Route path={pathes.equipment} element={<RouteEquipment />} />
+          <Route path={pathes.blog} element={<RouteBlog />} />
+          <Route path={pathes.about} element={<RouteAbout />} />
+          <Route path={pathes.account} element={<RouteAccount />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   );

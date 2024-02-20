@@ -10,6 +10,9 @@ const theme = createTheme({
     secondary: {
       main: 'rgba(251, 215, 132, 1)',
     },
+    background: {
+      fogging: 'linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%)',
+    }
   },
   typography: {
     fontFamily: 'Gilroy-Bold, sans-serif',
@@ -18,19 +21,9 @@ const theme = createTheme({
       fontFamily: 'Chronicle Display, sans-serif',
     },
     body1: {
-      fontSize: '18px',
+      fontSize: 18,
     },
   },
 });
-
-theme.typography.h1 = {
-  fontFamily: 'Chronicle Display, sans-serif',
-  fontSize: '80px',
-  [theme.breakpoints.down('md')]: {
-    fontSize: '30px',
-  },
-}
-
-
 
 export default theme

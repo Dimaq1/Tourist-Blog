@@ -17,7 +17,7 @@ const style = {
   },
   navbarListItem: {
     width: 'fit-content',
-    padding: 0,
+    p: 0,
     lineHeight: 1.2,
     letterSpacing: 0,
   },
@@ -39,12 +39,12 @@ const style = {
   },
   inner: {
     display: 'flex',
-    padding: '8px 6px 8px 10px',
+    p: '8px 6px 8px 10px',
   },
   iconMenuButtonClose: {
-    marginLeft: 'auto',
+    ml: 'auto',
     color: theme.palette.primary.main,
-    padding: 0,
+    p: 0,
   },
 }
 

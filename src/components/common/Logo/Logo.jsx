@@ -2,7 +2,7 @@ import React from 'react';
 
 function Logo() {
   return (
-    <img src="./images/logo.svg" alt="logo" style={{ maxWidth: '100px' }} />
+    <img src="./images/logo.svg" alt="logo" />
   );
 }
 

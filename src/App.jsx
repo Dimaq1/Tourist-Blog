@@ -12,7 +12,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <CustomGlobalStyles />
         <Layout />
-        <div style={{ height: '200vh' }}></div>
       </ThemeProvider>
     </Provider>
   )
