@@ -12,12 +12,16 @@ const theme = createTheme({
     },
     background: {
       fogging: 'linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%)',
+      foggingDown: 'linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)',
     }
   },
   typography: {
     fontFamily: 'Gilroy-Bold, sans-serif',
     fontSize: 18,
     h1: {
+      fontFamily: 'Chronicle Display, sans-serif',
+    },
+    h2: {
       fontFamily: 'Chronicle Display, sans-serif',
     },
     body1: {

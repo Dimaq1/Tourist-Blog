@@ -14,7 +14,7 @@ import { drawerClose, drawerOpen } from '../../../store/navigation/reducer.js';
 
 function Navigation() {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-  const isDrawerOpen = useSelector(state => state.navigationReducer.drawerOpenValue);
+  const isDrawerOpen = useSelector(state => state.navigation.drawerOpenValue);
   const dispatch = useDispatch();
   const handleDrawerOpen = () => {
     dispatch(drawerOpen())

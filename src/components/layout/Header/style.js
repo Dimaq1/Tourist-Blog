@@ -1,9 +1,11 @@
 const style = {
   header: {
     background: 'transparent',
-    pt: '3rem',
+    position: 'static',
+    height: 100,
+    display: 'flex',
+    justifyContent: 'center',
     boxShadow: 0,
-    position: 'static'
   },
   headerContainer: {
     display: 'flex',

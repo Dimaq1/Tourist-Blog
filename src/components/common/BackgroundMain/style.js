@@ -23,6 +23,13 @@ const style = {
     width: '100%',
     backgroundSize: 'cover',
   },
+  bgFogginDown: {
+    background: 'linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)',
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    bottom: '-39%'
+  }
 }
 
 export default style

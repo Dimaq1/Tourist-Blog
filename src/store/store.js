@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
-import buttonScrollDownReducer from '../store/buttonScrollDown/reducer'
-import navigationReducer from '../store/navigation/reducer'
+import buttonScrollDown from '../store/buttonScrollDown/reducer'
+import navigation from '../store/navigation/reducer'
+import blogPosts from '../store/blogPosts/reducer'
 
 const store = configureStore({
   reducer: {
-    buttonScrollDownReducer,
-    navigationReducer,
+    buttonScrollDown,
+    navigation,
+    blogPosts
   },
 });
 
