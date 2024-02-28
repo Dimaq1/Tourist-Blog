@@ -105,6 +105,11 @@ function Navigation() {
                 Blog
               </NavLink>
             </ListItem>
+            <ListItem sx={style.navbarListItem}>
+              <NavLink className={'navlink'} to={pathes.contact}>
+                Contact Us
+              </NavLink>
+            </ListItem>
           </List>
         </AppBar>}
     </>

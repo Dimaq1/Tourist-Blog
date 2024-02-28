@@ -5,7 +5,7 @@ const style = {
     flexDirection: 'column',
     justifyContent: { xs: 'flex-start', md: 'center' },
     alignItems: 'flex-start',
-    gap: '20px',
+    gap: 2.5,
     order: { xs: 1, md: 0 },
     gridRow: { xs: '2 / 3' },
   },

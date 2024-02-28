@@ -7,7 +7,7 @@ const store = configureStore({
   reducer: {
     buttonScrollDown,
     navigation,
-    blogPosts
+    blogPosts,
   },
 });
 

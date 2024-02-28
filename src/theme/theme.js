@@ -4,7 +4,7 @@ import 'normalize.css';
 const theme = createTheme({
   palette: {
     primary: {
-      dark: '#D3D8D7',
+      dark: '#858e92',
       main: '#fff',
     },
     secondary: {

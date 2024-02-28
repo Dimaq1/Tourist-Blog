@@ -13,7 +13,6 @@ function ContentHomeBlogs() {
   const dispatch = useDispatch();
   const blogPosts = useSelector(state => state.blogPosts.blogPosts)
 
-
   useEffect(() => {
     dispatch(thunks.fetchBlogPosts());
   }, [])

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Container, Typography } from '@mui/material';
 import Social from '../../common/Social/Social';
-import Slider from '../../common/Slider/Slider';
+import Email from '../../common/Email/index';
 import ButtonScrollDown from '../ButtonScrollDown/ButtonScrollDown';
 import style from './style.js'
 import Line from '../Line/Line.jsx';
@@ -21,7 +21,7 @@ function ContentHomeMain() {
         </Typography>
         <ButtonScrollDown />
       </Box>
-      <Slider />
+      <Email />
     </Container>
   );
 }

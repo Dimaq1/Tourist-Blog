@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Footer(props) {
+function RouteJobs() {
   return (
     <div>
-
+      Jobs
     </div>
   );
 }
 
-export default Footer;
+export default RouteJobs;
