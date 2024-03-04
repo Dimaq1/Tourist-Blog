@@ -8,7 +8,7 @@ import style from './style.js'
 function Account() {
 
   return (
-    <Link to={pathes.account}>
+    <Link className='account' to={pathes.account}>
       <Box sx={style.account}>
         <AccountCircleOutlinedIcon />
         <Typography>

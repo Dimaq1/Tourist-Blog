@@ -1,10 +1,14 @@
 import { AppBar, Box, Container, List, ListItem, Typography, Divider } from '@mui/material';
 import React from 'react';
-import Logo from '../../common/Logo/Logo';
+import Logo from '../../components/common/Logo/Logo';
 import style from './style';
-import pathes from '../../../constants/pathes';
+import pathes from '../../constants/pathes';
 import { Link } from 'react-router-dom';
+
+
 function Footer() {
+
+
   return (
     <Container component={'footer'} sx={style.footer} maxWidth='false'>
       <Divider sx={style.divider} absolute={true} />

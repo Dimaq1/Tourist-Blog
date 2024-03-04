@@ -8,12 +8,12 @@ const style = {
     top: 0,
     zIndex: -1,
   },
-  bgHome: {
-    backgroundImage: "url('./images/bg-home.jpg')",
+  bgMain: {
     width: '100%',
     height: '100%',
-    backgroundPosition: 'top left',
+    backgroundPosition: 'bottom left',
     backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
   },
   bgFogging: {
     background: theme.palette.background.fogging,

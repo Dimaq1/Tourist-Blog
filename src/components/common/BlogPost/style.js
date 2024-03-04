@@ -5,22 +5,11 @@ const style = {
   container: {
     background: theme.palette.background.main,
   },
-  listItem: {
-    gap: 6.25,
-    py: 3.75,
-    px: 0,
-  },
   inner: {
     display: 'flex',
     flexDirection: 'column',
-    py: { xs: 1.875, sm: 2.5, md: 0, },
-    px: { xs: 2.5, sm: 3.75, md: 0, },
-    border: {
-      xs: `1px solid ${theme.palette.secondary.main}`, md: 'none',
-    },
-    borderRadius: 7.5,
-    gap: { xs: 2.5, sm: 3.75 },
-    maxWidth: { xs: 500, md: 630 },
+    py: 6.25,
+    gap: { xs: 3, sm: 5 }
   },
   innerName: {
     color: theme.palette.secondary.main,
@@ -37,14 +26,13 @@ const style = {
     lineHeight: 1.2,
     letterSpacing: 0
   },
-  innerDescription: {
+  innerText: {
     fontSize: { xs: 16, md: 18 },
     fontFamily: 'Gilroy-Medium,sans-serif',
     lineHeight: 1.7, letterSpacing: 0
   },
   innerImage: {
-    maxHeight: { md: 500, lg: 720, },
-    display: { xs: 'none', md: 'block' }
+    maxWidth: '100%'
   }
 }
 

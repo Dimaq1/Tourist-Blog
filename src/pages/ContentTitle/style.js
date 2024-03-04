@@ -1,7 +1,7 @@
-import theme from '../../../theme/theme'
+import theme from '../../theme/theme'
 
 const style = {
-  contentHome: {
+  container: {
     display: { xs: 'grid', md: 'flex' },
     justifyContent: { md: 'space-between' },
     alignItems: { xs: 'start', md: 'center' },
@@ -12,7 +12,7 @@ const style = {
     pt: { xs: 5, md: 0, },
     pb: 12.5,
   },
-  contentHomeWrapp: {
+  wrapp: {
     display: 'flex',
     gap: { xs: 2.5, sm: 3, md: 3.75 },
     flexDirection: 'column',
@@ -21,7 +21,7 @@ const style = {
     gridRow: { xs: '1 / 2' },
     mb: { xs: 5 }
   },
-  contentHometext: {
+  text: {
     color: theme.palette.secondary.main,
     display: 'flex',
     alignItems: 'center',
@@ -31,8 +31,11 @@ const style = {
     textTransform: 'uppercase',
     fontSize: { xs: 14, sm: 18 },
   },
-  contentHomeTitle: {
+  title: {
     fontSize: { xs: 40, sm: 60, md: 70, lg: 80 },
+  },
+  subTitle: {
+    fontSize: { xs: 20, sm: 25 },
   }
 }
 

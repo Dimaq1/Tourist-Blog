@@ -30,12 +30,7 @@ const style = {
   drawerPaperProps: {
     width: 'inherit',
     overflowX: 'hidden',
-    backgroundImage: "url('./images/mobile-menu.jpg')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundBlendMode: 'multiply',
-    backgroundPosition: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)'
+    backgroundColor: theme.palette.background.main,
   },
   inner: {
     display: 'flex',

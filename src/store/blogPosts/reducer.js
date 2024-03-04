@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit'
 import thunks from './thunks'
 
 const initialState = {
-  blogPosts: []
+  blogPosts: [],
+  blogPost: {},
 }
 
 const blogPostsSlice = createSlice({
@@ -13,6 +14,9 @@ const blogPostsSlice = createSlice({
     builder
       .addCase(thunks.fetchBlogPosts.fulfilled, (state, { payload }) => {
         state.blogPosts = payload
+      })
+      .addCase(thunks.fetchBlogPost.fulfilled, (state, { payload }) => {
+        state.blogPost = { ...payload }
       })
   },
 })

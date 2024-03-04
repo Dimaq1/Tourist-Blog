@@ -5,3 +5,8 @@ export const getBlogPosts = async () => {
   const blogPosts = await response.json();
   return blogPosts;
 }
+export const getBlogPost = async (id) => {
+  const response = await fetch(`${API}/${id}`);
+  const blogPost = await response.json();
+  return blogPost;
+}

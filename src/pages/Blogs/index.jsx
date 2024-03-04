@@ -1,17 +1,19 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { List, ListItem, Typography, Box, Container } from '@mui/material';
-import pathes from '../../../constants/pathes';
-import thunks from '../../../store/blogPosts/thunks';
-import Line from '../Line/Line';
+import { Link, useLocation } from 'react-router-dom';
+import { List, ListItem, Typography, Box, Container, Button } from '@mui/material';
+import pathes from '../../constants/pathes.js';
+import thunks from '../../store/blogPosts/thunks.js';
+import Line from '../../components/common/Line/Line.jsx';
 import EastIcon from '@mui/icons-material/East';
 import style from './style.js';
 import './style.scss'
 
-function ContentHomeBlogs() {
+function Blogs() {
   const dispatch = useDispatch();
   const blogPosts = useSelector(state => state.blogPosts.blogPosts)
+  const location = useLocation();
+  const isBlogPath = location.pathname.includes(pathes.blog);
 
   useEffect(() => {
     dispatch(thunks.fetchBlogPosts());
@@ -34,12 +36,15 @@ function ContentHomeBlogs() {
 
                   <Typography sx={style.innerDescription}>{item.description}</Typography>
 
-                  <Link className='blog-button' to={pathes.blog}>
-                    read more
-                    <EastIcon />
+                  <Link className='blog-button' to={isBlogPath ? `${item.id}` : `${pathes.blog}/${item.id}`}>
+                    <Button sx={style.innerButton} variant="text">
+                      read more
+                      <EastIcon />
+                    </Button>
                   </Link>
+
                 </Box>
-                <Typography component={'img'} sx={style.innerImage} src={item.image} alt="#" />
+                <Typography component={'img'} sx={style.innerImage} src={item.imageSecondary} alt="#" />
               </ListItem>)}
           </List>
         </Container>
@@ -47,4 +52,4 @@ function ContentHomeBlogs() {
   )
 }
 
-export default ContentHomeBlogs;
+export default Blogs;

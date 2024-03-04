@@ -1,6 +1,7 @@
+import theme from "../../theme/theme"
+
 const style = {
   header: {
-    background: 'transparent',
     position: 'static',
     height: 100,
     display: 'flex',
