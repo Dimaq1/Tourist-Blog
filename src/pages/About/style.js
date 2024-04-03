@@ -7,28 +7,33 @@ const style = {
   },
   subTitle: {
     textAlign: 'center',
-    fontSize: '30px',
-    p: '30px 0 50px'
+    fontSize: { xs: 16, sm: 20, md: 30 },
+    p: { xs: '15px 0 25px', sm: '30px 0 50px' }
+  },
+  text: {
+    fontSize: { xs: 14, sm: 16, md: 18 },
   },
   wrapp: {
-    p: '40px 0',
+    p: { xs: '20px 0', sm: '40px 0', },
     textAlign: 'center'
   },
   wrappTitle: {
-    fontSize: '25px',
-    mb: '20px'
+    fontSize: { xs: 21, sm: 25, },
+    mb: 2.5
   },
   image: {
-    mb: '25px', maxWidth: '100%'
+    mb: 3.125,
+    maxWidth: '100%',
   },
   listItem: {
-    gap: '10px'
+    gap: 1.25,
+    alignItems: 'flex-start',
   },
   listItemIcon: {
-    minWidth: '0'
+    minWidth: 0
   },
   icon: {
-    maxWidth: '15px',
+    maxWidth: 15,
     color: 'white'
   }
 }

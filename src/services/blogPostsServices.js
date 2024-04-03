@@ -10,3 +10,4 @@ export const getBlogPost = async (id) => {
   const blogPost = await response.json();
   return blogPost;
 }
+
