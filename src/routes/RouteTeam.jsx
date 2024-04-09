@@ -1,5 +1,5 @@
 import React from 'react';
-import Team from '../components/Team';
+import Team from '../pages/Team';
 
 function RouteTeam() {
   return (

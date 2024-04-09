@@ -13,7 +13,7 @@ function Team() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  image="./public/images/editor.jpg"
+                  image="./images/editor.jpg"
                   alt="editor"
                 />
                 <CardContent>
@@ -32,7 +32,7 @@ function Team() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  image="./public/images/marketer.jpg"
+                  image="./images/marketer.jpg"
                   alt="marketer"
                 />
                 <CardContent>
@@ -51,7 +51,7 @@ function Team() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  image="./public/images/photographer.jpg"
+                  image="./images/photographer.jpg"
                   alt="photographer"
                 />
                 <CardContent>
@@ -70,7 +70,7 @@ function Team() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  image="./public/images/manager.jpg"
+                  image="./images/manager.jpg"
                   alt="manager"
                 />
                 <CardContent>
