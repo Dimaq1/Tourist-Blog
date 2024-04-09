@@ -29,6 +29,10 @@ const style = {
   },
   button: {
     width: { xs: '100%', sm: '30%' },
+  },
+  text: {
+    color: 'green',
+    mb: 2,
   }
 }
 

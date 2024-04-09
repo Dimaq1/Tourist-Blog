@@ -1,6 +1,6 @@
 import React from 'react';
 import About from '../pages/About';
-import Background from '../components/common/Background/Background';
+import Background from '../components/Background/Background';
 
 function RouteAbout() {
   return (

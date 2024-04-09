@@ -1,8 +1,7 @@
 import React from 'react';
-import { AppBar, Container, useMediaQuery } from '@mui/material';
-import Logo from '../../components/common/Logo/Logo';
-import Account from '../../components/common/Account/Account';
-import Navigation from '../../components/common/Navigation/Navigation';
+import { AppBar, Container, useMediaQuery, Link } from '@mui/material';
+import Logo from '../../components/Logo/index';
+import Navigation from '../../components/Navigation/Navigation';
 import style from './style';
 import theme from '../../theme/theme';
 import { useLocation } from 'react-router-dom';
@@ -19,7 +18,7 @@ function Header() {
         <Logo />
         <Navigation />
         {!isMobile && (
-          <Account />
+          <Link href="tel:+1234567890" sx={style.tel} >+1234567890</Link>
         )}
       </Container>
     </AppBar>

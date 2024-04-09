@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, List, ListItem, ListItemIcon, Typography } from '@mui/material';
-import ContentTitle from '../ContentTitle';
+import ContentTitle from '../../components/ContentTitle';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import style from './style';
 

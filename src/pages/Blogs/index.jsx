@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { List, ListItem, Typography, Box, Container, Button } from '@mui/material';
 import pathes from '../../constants/pathes.js';
 import thunks from '../../store/blogPosts/thunks.js';
-import Line from '../../components/common/Line/Line.jsx';
+import Line from '../../components/Line/index.jsx';
 import EastIcon from '@mui/icons-material/East';
 import style from './style.js';
 import './style.scss'

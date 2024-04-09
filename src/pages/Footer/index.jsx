@@ -1,6 +1,6 @@
 import { AppBar, Box, Container, List, ListItem, Typography, Divider } from '@mui/material';
 import React from 'react';
-import Logo from '../../components/common/Logo/Logo';
+import Logo from '../../components/Logo/index';
 import style from './style';
 import pathes from '../../constants/pathes';
 import { Link } from 'react-router-dom';
@@ -45,8 +45,6 @@ function Footer() {
               <ListItem sx={style.listItem}>
                 <Link to={pathes.team}>The Team</Link>
               </ListItem>
-              <ListItem sx={style.listItem}>
-                <Link to={pathes.jobs}>Jobs</Link></ListItem>
             </List>
           </Box>
         </AppBar>

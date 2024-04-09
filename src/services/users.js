@@ -20,7 +20,7 @@ export const postUser = async (userData) => {
     },
     body: JSON.stringify(userData)
   });
-  const users = await response.json();
-  return users;
+  const newUser = await response.json();
+  return newUser;
 }
 

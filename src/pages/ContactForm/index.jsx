@@ -1,11 +1,15 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useFormik } from 'formik';
 import { Button, Container, Typography, TextField, Box } from '@mui/material';
 import * as Yup from 'yup';
-import { postUser } from '../../services/users.js';
+import thunks from '../../store/form/thunks.js'
+import { removeMessage } from "../../store/form/reducer.js";
 import style from './style.js';
 
 function ContactForm() {
+  const dispatch = useDispatch();
+  const isSubmit = useSelector(state => state.users.isSubmit)
 
   const validationSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -34,9 +38,9 @@ function ContactForm() {
       email: '',
     },
     validationSchema: validationSchema,
-    onSubmit: (values,) => {
-      postUser(values)
-      console.log(values);
+    onSubmit: (values) => {
+      dispatch(thunks.postUser(values))
+      formik.resetForm();
     },
   });
 
@@ -58,6 +62,7 @@ function ContactForm() {
               value={formik.values.firstName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
+              onFocus={() => dispatch(removeMessage())}
               error={formik.touched.firstName && Boolean(formik.errors.firstName)}
               helperText={formik.touched.firstName && formik.errors.firstName}
             />
@@ -72,6 +77,7 @@ function ContactForm() {
               value={formik.values.lastName}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
+              onFocus={() => dispatch(removeMessage())}
               error={formik.touched.lastName && Boolean(formik.errors.lastName)}
               helperText={formik.touched.lastName && formik.errors.lastName}
             />
@@ -87,9 +93,13 @@ function ContactForm() {
             value={formik.values.email}
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
+            onFocus={() => dispatch(removeMessage())}
             error={formik.touched.email && Boolean(formik.errors.email)}
             helperText={formik.touched.email && formik.errors.email}
           />
+          {isSubmit ? (
+            <Typography sx={style.text}>Thank you, data has been sent!</Typography>
+          ) : null}
           <Button sx={style.button} variant="outlined" size="large" type="submit">Submit</Button>
         </Box>
       </Container>

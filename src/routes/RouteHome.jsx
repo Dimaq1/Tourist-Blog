@@ -1,7 +1,7 @@
 import React from 'react';
-import ContentTitle from '../pages/ContentTitle';
+import ContentTitle from '../components/ContentTitle';
 import Blogs from '../pages/Blogs';
-import Background from '../components/common/Background/Background';
+import Background from '../components/Background/Background';
 
 function RouteHome() {
   return (

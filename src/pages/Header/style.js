@@ -11,6 +11,11 @@ const style = {
   headerContainer: {
     display: 'flex',
     justifyContent: 'space-between'
+  },
+  tel: {
+    display: 'flex',
+    alignItems: 'center',
+    p: 0.6,
   }
 }
 

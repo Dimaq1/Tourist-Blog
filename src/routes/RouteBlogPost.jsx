@@ -1,5 +1,5 @@
 import React from 'react';
-import BlogPost from '../components/common/BlogPost';
+import BlogPost from '../components/BlogPost';
 
 function RouteBlogPost() {
   return (
